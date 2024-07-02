@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector</title>
+</head>
+<body>
+    <nav class = "block">
+        <p class = "para"> welcome to dom</p>
+    </nav>
+    <div class = "block">
+        <h4>hey there <span id = "username"> aadarsh soni</span></h4>
+        <p class = "para"> here is your code </p>
+        <pre><code>console.log("hello world")</code></pre>
+    </div>
+    <!-- <div>
+        <div>
+            <h3>this is div 2</h3>
+        </div>
+    </div> -->
+
+    <h1>hello</h1>
+    <script>
+        // query  selecctor first element ko select karta hai 
+        // - tagname
+        // -id
+        // -classs
+
+        // const n = document.querySelector("body")
+        // console.log(n)
+        // // n.innerHTML = "<h1>Hacked</h1>"
+        // console.log(n.innerHTML)
+
+
+        // const username = document.querySelector("#username")
+        // console.log(username.innerText)
+
+        const ele = document.querySelectorAll(".block")
+        console.log(ele)
+        ele.forEach(()=>{console.log(ele.innerHTML)})
+
+    </script>
+</body>
+</html>
